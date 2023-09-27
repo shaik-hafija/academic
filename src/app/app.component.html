@@ -1,0 +1,83 @@
+<!-- Navbar 1 - Academic Confluences -->
+
+<nav class="navbar navbar-expand-lg navbar-dark " style="height: 70px;" style="background-color: #ffffff;">
+  <div class="container-fluid"> <!-- Added a container for better responsiveness -->
+    <a class="navbar-brand" href="#" style="color: blue;"><strong>Academic Confluences</strong></a>
+    <!-- Reorganized the search input -->
+    <form class="d-flex">
+      <input type="text" class="form-control me-2" name="search" placeholder="Search" style="border-radius: 25px;border-color: #0c85e2;" ngModel required />
+      <!-- Add a search button -->
+      <button class="btn btn-primary" type="submit"style="border-radius: 25px;" >Search</button>
+    </form>
+    <div class="social-icons">
+      <div class="icon instagram-icon">
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="icon facebook-icon">
+        <i class="fab fa-facebook"></i>
+      </div>
+    </div>
+    <!-- Use a button for the profile icon -->
+    <div class="btn btn-primary" routerLink="event" style="background-color: white; color: rgb(46, 46, 202);">
+      <i class="fas fa-cloud-upload-alt"></i> Sign in
+    </div>
+  </div>
+  <div class="profile-card" id="profileCard">
+    <h1>Welcome</h1>
+    <!-- Your profile card content here -->
+  </div>
+</nav>
+
+<!-- Navbar 2 - Bright Colors -->
+<!-- Navbar 2 - Bright Colors (Sticky) -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #0c85e2;">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#" routerLink="home" style="color: white;">
+            <strong>Home</strong>
+          </a>
+        </li>
+        <li class="nav-item mx-4">
+          <a class="nav-link" href="#" routerLink="about" style="color: white;">About</a>
+        </li>
+        <li class="nav-item mx-4">
+          <a class="nav-link" href="#" style="color: white;">Workshops</a>
+        </li>
+        <li class="nav-item mx-4">
+          <a class="nav-link" href="#" style="color: white;">Conferences</a>
+        </li>
+        <li class="nav-item mx-4">
+          <a class="nav-link" href="#" routerLink="seminars" style="color: white;">Seminars</a>
+        </li>
+        <li class="nav-item mx-4">
+          <a class="nav-link" href="#" style="color: white;">Symposia</a>
+        </li>
+        <li class="nav-item mx-4">
+          <a class="nav-link" href="#" style="color: white;">Contact Us</a>
+        </li>
+        <li class="nav-item mx-4">
+          <a class="nav-link" href="#" routerLink="event" style="color: white;">Events</a>
+        </li>
+        <!-- Repeat the above pattern for other menu items -->
+        <li class="nav-item mx-4">
+          <a class="nav-link" href="#" routerLink="about" style="color: white;">About</a>
+        </li>
+        
+        <!-- ... -->
+        <li class="nav-item">
+          <div class="btn btn-primary" routerLink="event" style="background-color: white; color: blue;">
+            <i class="fas fa-cloud-upload-alt"></i> Upload Event
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Content below the navbars -->
+<router-outlet></router-outlet>
+
+
+

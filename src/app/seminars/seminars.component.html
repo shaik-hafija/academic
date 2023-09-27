@@ -1,0 +1,62 @@
+
+
+
+<button class="btn  m-2" (click)="Read()" style="background-color: rgb(255, 255, 255);color: blue; border-color: blue;">Seminars</button>
+<div *ngIf="show">
+    <div *ngIf="!(a.length==0)" class="grid-container">
+        <div *ngFor="let Eachflower of a">
+           
+
+          
+                
+                    <div class="animation-card butterflies" style="width: 18rem; height: 24rem;">
+
+                    <h5 class="card-text"> EventName:{{Eachflower[0]}}</h5>
+                    <p class="card-text">EventType:{{Eachflower[1]}}</p>
+                    <p class="card-text">EventStart:{{Eachflower[2] | date }}</p>
+                    <p class="card-text">EventEnd:{{Eachflower[3] | date}}</p>
+                    <p class="card-text">EventEnd:{{Eachflower[6]}}₹</p>
+                   
+                    <!-- <div class="modal fade" id="more">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="w-100 text-center mt-2"
+                                        style="color: blueviolet;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                        MoreInfo</h3>
+                                    <button class="btn btn-danger" data-dismiss="modal">×</button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <p><b style="font-size: x-large;color: blueviolet;"> Soil water:</b> content was
+                                            kept at field
+                                            capacity by daily waterings as
+                                            determined by tensiometer readings.</p>
+                                        <p><b style="font-size: x-large;color: blueviolet;"> Watering:</b> content was
+                                            kept at field
+                                            capacity by daily waterings as
+                                            determined by tensiometer readings.</p>
+                                        <p><b style="font-size: x-large;color: blueviolet;"> Fertilizer:</b> content was
+                                            kept at field
+                                            capacity by daily waterings as
+                                            determined by tensiometer readings.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+
+                                    <button class="btn btn-success" data-dismiss="modal">Ok</button>
+                                </div>
+
+                               
+                            </div>
+                        </div>
+                    </div> -->
+                    <a href="#" class="btn btn-primary" routerLink="/form" routerLinkActive="active">ViewMore</a>
+                
+                
+            </div>
+      </div>
+    </div>
+</div> 
+
+  

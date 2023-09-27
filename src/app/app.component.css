@@ -1,0 +1,72 @@
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin-left: 10px;
+  cursor: pointer;
+  text-align: center;
+  color: red;
+  font-size: xx-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.profile-card {
+  position: fixed;
+  top: 30%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  background-color:rgb(253, 202, 33);
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: none;
+  z-index: 999;
+}
+
+/* Additional styling for the profile card (customize as needed) */
+.profile-card h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.profile-card p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+li
+{
+ font-weight: bolder;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #0167d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.instagram-icon {
+  font-size: 34px;
+  color: #3498db; /* Blue color */
+  
+}
+.facebook-icon {
+  font-size: 34px;
+  color: #1877f2; /* Facebook blue color */
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 34px;
+  margin: 0 20px;
+}
